@@ -24,6 +24,8 @@ from datasets import load_dataset
 from PIL import Image
 from torch.utils.data import DataLoader, Dataset
 
+from html_pruning import prune_html_dom
+
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
 
@@ -95,6 +97,7 @@ class Mind2WebDataset(Dataset):
         max_html_chars: int = 12_000,
         use_axtree: bool = False,
         axtree_dir: str = "axtrees",
+        prune_html: bool = False,
         hf_dataset=None,
     ):
         if split not in self.VALID_SPLITS:
@@ -103,6 +106,7 @@ class Mind2WebDataset(Dataset):
         self.split = split
         self.max_html_chars = max_html_chars
         self.use_axtree = use_axtree
+        self.prune_html = prune_html
         self.axtree_split_dir = os.path.join(axtree_dir, split)
 
         if use_axtree and not os.path.isdir(self.axtree_split_dir):
@@ -117,7 +121,12 @@ class Mind2WebDataset(Dataset):
             print(f"[Mind2WebDataset] Downloading '{dataset_id}' split='{split}' …")
             self._data = load_dataset(dataset_id, split=split)
 
-        context = f"AXTree ({self.axtree_split_dir})" if use_axtree else "HTML"
+        if use_axtree:
+            context = f"AXTree ({self.axtree_split_dir})"
+        elif prune_html:
+            context = "Pruned HTML"
+        else:
+            context = "HTML"
         print(f"[Mind2WebDataset] {len(self._data)} examples | context={context}")
 
     def __len__(self) -> int:
@@ -132,8 +141,11 @@ class Mind2WebDataset(Dataset):
                 page_context = f.read()
             context_type = "axtree"
         else:
+            html = str(row.get("cleaned_html") or "")
+            if self.prune_html:
+                html = prune_html_dom(html)
             page_context = _truncate_html(
-                str(row.get("cleaned_html") or ""), self.max_html_chars
+                html, self.max_html_chars
             )
             context_type = "html"
 
@@ -178,6 +190,7 @@ def get_dataloader(
     max_html_chars: int = 12_000,
     use_axtree: bool = False,
     axtree_dir: str = "axtrees",
+    prune_html: bool = False,
     batch_size: int = 1,
     shuffle: bool = False,
     num_workers: int = 0,
@@ -189,6 +202,7 @@ def get_dataloader(
         max_html_chars=max_html_chars,
         use_axtree=use_axtree,
         axtree_dir=axtree_dir,
+        prune_html=prune_html,
         hf_dataset=hf_dataset,
     )
     return DataLoader(

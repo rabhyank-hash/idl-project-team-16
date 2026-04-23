@@ -24,6 +24,7 @@ from datasets import load_dataset
 from PIL import Image
 from tqdm import tqdm
 
+from html_pruning import prune_html_dom
 from mind2web_metrics import evaluate
 from run_inference import load_model, parse_answer
 
@@ -74,8 +75,11 @@ def _truncate_html(html: str, max_chars: int):
     return html[:half] + "\n... [TRUNCATED] ...\n" + html[-half:]
 
 
-def build_messages(row, max_html_chars):
-    html     = _truncate_html(row["cleaned_html"], max_html_chars)
+def build_messages(row, max_html_chars, prune_html=False):
+    html = str(row["cleaned_html"] or "")
+    if prune_html:
+        html = prune_html_dom(html)
+    html     = _truncate_html(html, max_html_chars)
     cand_str = "\n".join(f"[{i}] {c}" for i, c in enumerate(row["action_reprs"]))
     text = (
         f"Task: {row['confirmed_task']}\n\n"
@@ -161,7 +165,7 @@ def main(args):
         gold_repr = row["target_action_reprs"]
 
         try:
-            messages = build_messages(row, args.max_html_chars)
+            messages = build_messages(row, args.max_html_chars, prune_html=args.prune_html)
             inputs   = apply_chat_template_cot(processor, model, messages)
             full_text, thinking, answer_text = generate_with_thinking(
                 model, processor, inputs, args.max_new_tokens
@@ -220,5 +224,6 @@ if __name__ == "__main__":
     p.add_argument("--n",              type=int, default=None)
     p.add_argument("--max_html_chars", type=int, default=DEFAULT["max_html_chars"])
     p.add_argument("--max_new_tokens", type=int, default=DEFAULT["max_new_tokens"])
+    p.add_argument("--prune_html",     action="store_true")
     p.add_argument("--output_dir",     default=DEFAULT["output_dir"])
     main(p.parse_args())

@@ -1,2 +1,8 @@
-gh-key
 *.pem
+.claude/
+.gh_token
+sft_data/
+data/
+assets/
+.git-rewrite/
+__pycache__/
