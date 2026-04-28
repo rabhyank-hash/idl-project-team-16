@@ -1,0 +1,15 @@
+{
+  "model_id": "Qwen/Qwen3-VL-8B-Thinking",
+  "dataset_id": "osunlp/Multimodal-Mind2Web",
+  "eval_split": "test_website",
+  "train_split": "train",
+  "max_html_chars": 4000,
+  "max_new_tokens": 512,
+  "sanity_check_n": 10,
+  "output_dir": "/ocean/projects/cis260137p/ssingh40/qwen3_run/ablation_outputs/outcomeaware",
+  "use_bf16": true,
+  "use_flash_attn": false,
+  "use_candidate_scoring": true,
+  "scoring_max_new_tokens": 10,
+  "timestamp": "20260424_020657"
+}

@@ -1,0 +1,12 @@
+{
+  "element_accuracy": 0.5976447497546614,
+  "operation_f1": 0.9071199222435988,
+  "step_success_rate": 0.5976447497546614,
+  "task_success_rate": 0.035211267605633804,
+  "top3_accuracy": 0.8429833169774289,
+  "num_examples": 1019,
+  "num_tasks": 142,
+  "ablation": "zero_shot",
+  "mode": "zero_shot",
+  "total_time_seconds": 951.010772228241
+}

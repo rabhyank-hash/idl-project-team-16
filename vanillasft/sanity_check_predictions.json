@@ -1,0 +1,482 @@
+[
+  {
+    "example_index": 0,
+    "action_uid": "79c4a963-4aa9-49c1-9257-6b0d5069c551",
+    "task_id": "013781df-4391-4533-bcb1-15f6819064f6",
+    "website": "tiktok.music",
+    "confirmed_task": "What are the romantic reggae musics from BCD Studio that can be used in tik tok series in andorra",
+    "truncated_html_len": 4021,
+    "original_html_len": 85102,
+    "was_truncated": true,
+    "num_candidates": 7,
+    "candidate_actions": [
+      "[label]   -> CLICK",
+      "[div]  Andorra -> CLICK",
+      "[span]  TikTok Series -> CLICK",
+      "[span]  Reggae -> CLICK",
+      "[span]  Romantic -> CLICK",
+      "[input]   -> TYPE: BCD Studio",
+      "[button]  Search -> CLICK"
+    ],
+    "gold_target_index": 0,
+    "gold_target_action": "[label]   -> CLICK",
+    "predicted_index": 0,
+    "predicted_action": "[label]   -> CLICK",
+    "top3_predicted_indices": [
+      0,
+      3,
+      1
+    ],
+    "top3_predicted_actions": [
+      "[label]   -> CLICK",
+      "[span]  Reggae -> CLICK",
+      "[div]  Andorra -> CLICK"
+    ],
+    "raw_model_output": "{\"scores\": {\"0\": -4.4485, \"1\": -5.7813, \"2\": -7.8438, \"3\": -5.5316, \"4\": -8.2661, \"5\": -8.0951, \"6\": -8.5329}}",
+    "scores": [
+      -4.448471516370773,
+      -5.781254053115845,
+      -7.843798398971558,
+      -5.531564325094223,
+      -8.266102373600006,
+      -8.095052689313889,
+      -8.532874047756195
+    ],
+    "metric_ele_acc": 1,
+    "metric_op_f1": 1.0,
+    "metric_step_sr": 1,
+    "metric_top3_acc": 1
+  },
+  {
+    "example_index": 1,
+    "action_uid": "7da11b14-b652-4507-8d50-ad7515c9e455",
+    "task_id": "013781df-4391-4533-bcb1-15f6819064f6",
+    "website": "tiktok.music",
+    "confirmed_task": "What are the romantic reggae musics from BCD Studio that can be used in tik tok series in andorra",
+    "truncated_html_len": 4021,
+    "original_html_len": 121387,
+    "was_truncated": true,
+    "num_candidates": 7,
+    "candidate_actions": [
+      "[label]   -> CLICK",
+      "[div]  Andorra -> CLICK",
+      "[span]  TikTok Series -> CLICK",
+      "[span]  Reggae -> CLICK",
+      "[span]  Romantic -> CLICK",
+      "[input]   -> TYPE: BCD Studio",
+      "[button]  Search -> CLICK"
+    ],
+    "gold_target_index": 1,
+    "gold_target_action": "[div]  Andorra -> CLICK",
+    "predicted_index": 1,
+    "predicted_action": "[div]  Andorra -> CLICK",
+    "top3_predicted_indices": [
+      1,
+      2,
+      3
+    ],
+    "top3_predicted_actions": [
+      "[div]  Andorra -> CLICK",
+      "[span]  TikTok Series -> CLICK",
+      "[span]  Reggae -> CLICK"
+    ],
+    "raw_model_output": "{\"scores\": {\"0\": -7.1563, \"1\": -4.3752, \"2\": -6.3448, \"3\": -6.9871, \"4\": -7.2364, \"5\": -7.3938, \"6\": -7.5659}}",
+    "scores": [
+      -7.156290531158447,
+      -4.375153541564941,
+      -6.34477424621582,
+      -6.9870500564575195,
+      -7.236366510391235,
+      -7.393806219100952,
+      -7.565922021865845
+    ],
+    "metric_ele_acc": 1,
+    "metric_op_f1": 1.0,
+    "metric_step_sr": 1,
+    "metric_top3_acc": 1
+  },
+  {
+    "example_index": 2,
+    "action_uid": "e4dda2e2-0b2e-4094-a3e7-79273cdd394c",
+    "task_id": "013781df-4391-4533-bcb1-15f6819064f6",
+    "website": "tiktok.music",
+    "confirmed_task": "What are the romantic reggae musics from BCD Studio that can be used in tik tok series in andorra",
+    "truncated_html_len": 4021,
+    "original_html_len": 85441,
+    "was_truncated": true,
+    "num_candidates": 7,
+    "candidate_actions": [
+      "[label]   -> CLICK",
+      "[div]  Andorra -> CLICK",
+      "[span]  TikTok Series -> CLICK",
+      "[span]  Reggae -> CLICK",
+      "[span]  Romantic -> CLICK",
+      "[input]   -> TYPE: BCD Studio",
+      "[button]  Search -> CLICK"
+    ],
+    "gold_target_index": 2,
+    "gold_target_action": "[span]  TikTok Series -> CLICK",
+    "predicted_index": 3,
+    "predicted_action": "[span]  Reggae -> CLICK",
+    "top3_predicted_indices": [
+      3,
+      2,
+      4
+    ],
+    "top3_predicted_actions": [
+      "[span]  Reggae -> CLICK",
+      "[span]  TikTok Series -> CLICK",
+      "[span]  Romantic -> CLICK"
+    ],
+    "raw_model_output": "{\"scores\": {\"0\": -8.0942, \"1\": -6.6408, \"2\": -4.9933, \"3\": -4.3999, \"4\": -5.9886, \"5\": -6.4897, \"6\": -7.1634}}",
+    "scores": [
+      -8.094186067581177,
+      -6.640766620635986,
+      -4.993257522583008,
+      -4.399862289428711,
+      -5.988576173782349,
+      -6.4897096157073975,
+      -7.163424491882324
+    ],
+    "metric_ele_acc": 0,
+    "metric_op_f1": 1.0,
+    "metric_step_sr": 0,
+    "metric_top3_acc": 1
+  },
+  {
+    "example_index": 3,
+    "action_uid": "d74f1666-d89e-4884-9063-1e9535ffcd1e",
+    "task_id": "013781df-4391-4533-bcb1-15f6819064f6",
+    "website": "tiktok.music",
+    "confirmed_task": "What are the romantic reggae musics from BCD Studio that can be used in tik tok series in andorra",
+    "truncated_html_len": 4021,
+    "original_html_len": 85441,
+    "was_truncated": true,
+    "num_candidates": 7,
+    "candidate_actions": [
+      "[label]   -> CLICK",
+      "[div]  Andorra -> CLICK",
+      "[span]  TikTok Series -> CLICK",
+      "[span]  Reggae -> CLICK",
+      "[span]  Romantic -> CLICK",
+      "[input]   -> TYPE: BCD Studio",
+      "[button]  Search -> CLICK"
+    ],
+    "gold_target_index": 3,
+    "gold_target_action": "[span]  Reggae -> CLICK",
+    "predicted_index": 3,
+    "predicted_action": "[span]  Reggae -> CLICK",
+    "top3_predicted_indices": [
+      3,
+      2,
+      1
+    ],
+    "top3_predicted_actions": [
+      "[span]  Reggae -> CLICK",
+      "[span]  TikTok Series -> CLICK",
+      "[div]  Andorra -> CLICK"
+    ],
+    "raw_model_output": "{\"scores\": {\"0\": -7.3751, \"1\": -5.4767, \"2\": -4.5063, \"3\": -4.4389, \"4\": -5.6388, \"5\": -6.2405, \"6\": -6.8351}}",
+    "scores": [
+      -7.375144004821777,
+      -5.4767374992370605,
+      -4.506254196166992,
+      -4.438895225524902,
+      -5.638790130615234,
+      -6.240478992462158,
+      -6.83513879776001
+    ],
+    "metric_ele_acc": 1,
+    "metric_op_f1": 1.0,
+    "metric_step_sr": 1,
+    "metric_top3_acc": 1
+  },
+  {
+    "example_index": 4,
+    "action_uid": "2fec05ca-7da4-425d-a4bc-351d7f8770f4",
+    "task_id": "013781df-4391-4533-bcb1-15f6819064f6",
+    "website": "tiktok.music",
+    "confirmed_task": "What are the romantic reggae musics from BCD Studio that can be used in tik tok series in andorra",
+    "truncated_html_len": 4021,
+    "original_html_len": 86976,
+    "was_truncated": true,
+    "num_candidates": 7,
+    "candidate_actions": [
+      "[label]   -> CLICK",
+      "[div]  Andorra -> CLICK",
+      "[span]  TikTok Series -> CLICK",
+      "[span]  Reggae -> CLICK",
+      "[span]  Romantic -> CLICK",
+      "[input]   -> TYPE: BCD Studio",
+      "[button]  Search -> CLICK"
+    ],
+    "gold_target_index": 4,
+    "gold_target_action": "[span]  Romantic -> CLICK",
+    "predicted_index": 2,
+    "predicted_action": "[span]  TikTok Series -> CLICK",
+    "top3_predicted_indices": [
+      2,
+      3,
+      4
+    ],
+    "top3_predicted_actions": [
+      "[span]  TikTok Series -> CLICK",
+      "[span]  Reggae -> CLICK",
+      "[span]  Romantic -> CLICK"
+    ],
+    "raw_model_output": "{\"scores\": {\"0\": -7.2032, \"1\": -5.1408, \"2\": -4.5215, \"3\": -4.8309, \"4\": -4.9053, \"5\": -5.3024, \"6\": -6.5367}}",
+    "scores": [
+      -7.2032153606414795,
+      -5.1408185958862305,
+      -4.521503448486328,
+      -4.830881118774414,
+      -4.905276298522949,
+      -5.302417755126953,
+      -6.5367302894592285
+    ],
+    "metric_ele_acc": 0,
+    "metric_op_f1": 1.0,
+    "metric_step_sr": 0,
+    "metric_top3_acc": 1
+  },
+  {
+    "example_index": 5,
+    "action_uid": "b426db75-05bc-4386-ada0-0d5754bf22c1",
+    "task_id": "013781df-4391-4533-bcb1-15f6819064f6",
+    "website": "tiktok.music",
+    "confirmed_task": "What are the romantic reggae musics from BCD Studio that can be used in tik tok series in andorra",
+    "truncated_html_len": 4021,
+    "original_html_len": 76573,
+    "was_truncated": true,
+    "num_candidates": 7,
+    "candidate_actions": [
+      "[label]   -> CLICK",
+      "[div]  Andorra -> CLICK",
+      "[span]  TikTok Series -> CLICK",
+      "[span]  Reggae -> CLICK",
+      "[span]  Romantic -> CLICK",
+      "[input]   -> TYPE: BCD Studio",
+      "[button]  Search -> CLICK"
+    ],
+    "gold_target_index": 5,
+    "gold_target_action": "[input]   -> TYPE: BCD Studio",
+    "predicted_index": 5,
+    "predicted_action": "[input]   -> TYPE: BCD Studio",
+    "top3_predicted_indices": [
+      5,
+      4,
+      3
+    ],
+    "top3_predicted_actions": [
+      "[input]   -> TYPE: BCD Studio",
+      "[span]  Romantic -> CLICK",
+      "[span]  Reggae -> CLICK"
+    ],
+    "raw_model_output": "{\"scores\": {\"0\": -7.5157, \"1\": -6.3128, \"2\": -6.0402, \"3\": -5.9482, \"4\": -5.1361, \"5\": -4.1991, \"6\": -5.9649}}",
+    "scores": [
+      -7.515676736831665,
+      -6.312772750854492,
+      -6.040157318115234,
+      -5.948166847229004,
+      -5.136064529418945,
+      -4.19908332824707,
+      -5.964934825897217
+    ],
+    "metric_ele_acc": 1,
+    "metric_op_f1": 1.0,
+    "metric_step_sr": 1,
+    "metric_top3_acc": 1
+  },
+  {
+    "example_index": 6,
+    "action_uid": "a2515d7e-cf4c-4a41-bf9d-268df1780a63",
+    "task_id": "013781df-4391-4533-bcb1-15f6819064f6",
+    "website": "tiktok.music",
+    "confirmed_task": "What are the romantic reggae musics from BCD Studio that can be used in tik tok series in andorra",
+    "truncated_html_len": 4021,
+    "original_html_len": 76617,
+    "was_truncated": true,
+    "num_candidates": 7,
+    "candidate_actions": [
+      "[label]   -> CLICK",
+      "[div]  Andorra -> CLICK",
+      "[span]  TikTok Series -> CLICK",
+      "[span]  Reggae -> CLICK",
+      "[span]  Romantic -> CLICK",
+      "[input]   -> TYPE: BCD Studio",
+      "[button]  Search -> CLICK"
+    ],
+    "gold_target_index": 6,
+    "gold_target_action": "[button]  Search -> CLICK",
+    "predicted_index": 6,
+    "predicted_action": "[button]  Search -> CLICK",
+    "top3_predicted_indices": [
+      6,
+      5,
+      4
+    ],
+    "top3_predicted_actions": [
+      "[button]  Search -> CLICK",
+      "[input]   -> TYPE: BCD Studio",
+      "[span]  Romantic -> CLICK"
+    ],
+    "raw_model_output": "{\"scores\": {\"0\": -7.7032, \"1\": -6.6564, \"2\": -6.4858, \"3\": -6.4239, \"4\": -6.0263, \"5\": -4.6333, \"6\": -4.4212}}",
+    "scores": [
+      -7.7032153606414795,
+      -6.65641450881958,
+      -6.485828399658203,
+      -6.423935890197754,
+      -6.026259422302246,
+      -4.633340358734131,
+      -4.4212446212768555
+    ],
+    "metric_ele_acc": 1,
+    "metric_op_f1": 1.0,
+    "metric_step_sr": 1,
+    "metric_top3_acc": 1
+  },
+  {
+    "example_index": 7,
+    "action_uid": "7ce9c5bd-c798-4488-9a15-141ad746f6c5",
+    "task_id": "532cab96-a12d-4b7f-82e1-c1c0c82e15af",
+    "website": "tiktok.music",
+    "confirmed_task": "Show me the trending songs in canada for the last 30 days that are approved for business use",
+    "truncated_html_len": 4021,
+    "original_html_len": 85104,
+    "was_truncated": true,
+    "num_candidates": 7,
+    "candidate_actions": [
+      "[p]  Trends -> CLICK",
+      "[span]  Songs -> CLICK",
+      "[span]  Egypt -> CLICK",
+      "[div]  Canada -> CLICK",
+      "[div]  Last 7 days -> CLICK",
+      "[div]  Last 30 days -> CLICK",
+      "[span]  Approved for business use -> CLICK"
+    ],
+    "gold_target_index": 0,
+    "gold_target_action": "[p]  Trends -> CLICK",
+    "predicted_index": 0,
+    "predicted_action": "[p]  Trends -> CLICK",
+    "top3_predicted_indices": [
+      0,
+      1,
+      2
+    ],
+    "top3_predicted_actions": [
+      "[p]  Trends -> CLICK",
+      "[span]  Songs -> CLICK",
+      "[span]  Egypt -> CLICK"
+    ],
+    "raw_model_output": "{\"scores\": {\"0\": -4.9073, \"1\": -7.25, \"2\": -8.0627, \"3\": -8.5944, \"4\": -8.6413, \"5\": -8.5952, \"6\": -8.7826}}",
+    "scores": [
+      -4.907296866178513,
+      -7.250012755393982,
+      -8.062683463096619,
+      -8.594396770000458,
+      -8.64132010936737,
+      -8.595229357481003,
+      -8.782598465681076
+    ],
+    "metric_ele_acc": 1,
+    "metric_op_f1": 1.0,
+    "metric_step_sr": 1,
+    "metric_top3_acc": 1
+  },
+  {
+    "example_index": 8,
+    "action_uid": "19f1bc97-2f5d-47e7-b422-b9a329d1d3f3",
+    "task_id": "532cab96-a12d-4b7f-82e1-c1c0c82e15af",
+    "website": "tiktok.music",
+    "confirmed_task": "Show me the trending songs in canada for the last 30 days that are approved for business use",
+    "truncated_html_len": 4021,
+    "original_html_len": 85675,
+    "was_truncated": true,
+    "num_candidates": 7,
+    "candidate_actions": [
+      "[p]  Trends -> CLICK",
+      "[span]  Songs -> CLICK",
+      "[span]  Egypt -> CLICK",
+      "[div]  Canada -> CLICK",
+      "[div]  Last 7 days -> CLICK",
+      "[div]  Last 30 days -> CLICK",
+      "[span]  Approved for business use -> CLICK"
+    ],
+    "gold_target_index": 1,
+    "gold_target_action": "[span]  Songs -> CLICK",
+    "predicted_index": 0,
+    "predicted_action": "[p]  Trends -> CLICK",
+    "top3_predicted_indices": [
+      0,
+      1,
+      2
+    ],
+    "top3_predicted_actions": [
+      "[p]  Trends -> CLICK",
+      "[span]  Songs -> CLICK",
+      "[span]  Egypt -> CLICK"
+    ],
+    "raw_model_output": "{\"scores\": {\"0\": -5.1392, \"1\": -5.4455, \"2\": -6.5893, \"3\": -7.2746, \"4\": -7.6484, \"5\": -7.8558, \"6\": -7.9787}}",
+    "scores": [
+      -5.139223217964172,
+      -5.445501804351807,
+      -6.589273452758789,
+      -7.274630546569824,
+      -7.648385524749756,
+      -7.855844497680664,
+      -7.978698015213013
+    ],
+    "metric_ele_acc": 0,
+    "metric_op_f1": 1.0,
+    "metric_step_sr": 0,
+    "metric_top3_acc": 1
+  },
+  {
+    "example_index": 9,
+    "action_uid": "5fd0a5c8-0e8e-4502-9f02-68f13fcb8b5a",
+    "task_id": "532cab96-a12d-4b7f-82e1-c1c0c82e15af",
+    "website": "tiktok.music",
+    "confirmed_task": "Show me the trending songs in canada for the last 30 days that are approved for business use",
+    "truncated_html_len": 4021,
+    "original_html_len": 25892,
+    "was_truncated": true,
+    "num_candidates": 7,
+    "candidate_actions": [
+      "[p]  Trends -> CLICK",
+      "[span]  Songs -> CLICK",
+      "[span]  Egypt -> CLICK",
+      "[div]  Canada -> CLICK",
+      "[div]  Last 7 days -> CLICK",
+      "[div]  Last 30 days -> CLICK",
+      "[span]  Approved for business use -> CLICK"
+    ],
+    "gold_target_index": 2,
+    "gold_target_action": "[span]  Egypt -> CLICK",
+    "predicted_index": 2,
+    "predicted_action": "[span]  Egypt -> CLICK",
+    "top3_predicted_indices": [
+      2,
+      3,
+      1
+    ],
+    "top3_predicted_actions": [
+      "[span]  Egypt -> CLICK",
+      "[div]  Canada -> CLICK",
+      "[span]  Songs -> CLICK"
+    ],
+    "raw_model_output": "{\"scores\": {\"0\": -7.094, \"1\": -6.0626, \"2\": -3.9703, \"3\": -5.5974, \"4\": -6.1446, \"5\": -6.5834, \"6\": -6.914}}",
+    "scores": [
+      -7.093985080718994,
+      -6.062620162963867,
+      -3.9702720642089844,
+      -5.597435712814331,
+      -6.1446226835250854,
+      -6.583444118499756,
+      -6.91403603553772
+    ],
+    "metric_ele_acc": 1,
+    "metric_op_f1": 1.0,
+    "metric_step_sr": 1,
+    "metric_top3_acc": 1
+  }
+]
